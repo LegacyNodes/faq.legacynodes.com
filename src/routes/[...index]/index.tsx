@@ -57,5 +57,24 @@ export const head: DocumentHead = ({ resolveValue }) => {
   const builderContent = resolveValue(useBuilderContent);
   return {
     title: builderContent?.data?.title,
+    description: builderContent?.data?.description,
+    meta: [
+      { name: "keywords", content: builderContent?.data?.keywords },
+      { name: "author", content: builderContent?.data?.author },
+      { property: "og:image", content: builderContent?.data?.image },
+      { property: "og:image:alt", content: builderContent?.data?.imageAlt },
+      { name: "twitter:image", content: builderContent?.data?.Image },
+      { name: "twitter:image:alt", content: builderContent?.data?.imageAlt },
+      { name: "twitter:card", content: builderContent?.data?.twitterCard },
+      { name: "theme-color", content: builderContent?.data?.themeColor },
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+      { name: "robots", content: "index, follow" },
+      { name: "og:title", content: builderContent?.data?.title },
+      { name: "og:description", content: builderContent?.data?.description },
+      { name: "og:type", content: builderContent?.data?.ogType },
+      { name: "og:site_name", content: "CraftersGG" },
+      { name: "twitter:title", content: builderContent?.data?.title },
+      { name: "twitter:description", content: builderContent?.data?.description },
+    ],
   };
 };
