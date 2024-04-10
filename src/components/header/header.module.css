@@ -1,100 +1,61 @@
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
+.header {
+  background: linear-gradient(to right, #002e56, #004e92);
   padding: 20px;
-  margin-right: 20px;
+  text-align: center;
+  width: 100%;
 }
 
-.logo {
+.wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  padding-right: 50px;
 }
 
 .logo img {
-  max-width: 100px;
-  height: auto;
-  margin-right: 15px;
   border-radius: 50%;
+  border: 6px solid #252525;
+  transform: scale(1);
+  transition: transform 0.5s;
 }
 
 .logo img:hover {
-  animation: logoAnimation 1s infinite;
-
+  transform: scale(1.1);
+  transition: transform 0.3s;;
 }
 
-@keyframes logoAnimation {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-.header {
-  background: #013272;
-  width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-}
-
-.header ul {
+.navList {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 20px;
+  overflow: hidden;
 }
 
-.header li {
-  font-size: 1.2rem;
+.navList li {
+  float: left;
 }
 
-.header li a {
-  color: #267bfc;
+.navList li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.header li a:hover {
-  color: #6098ec;
+.navList li a:hover {
+  background-color: #007bff;
+  border-radius: 3px;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media (max-width: 600px) {
   .wrapper {
     flex-direction: column;
-    align-items: center;
-    padding: 10px;
   }
 
-  .logo img {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .header ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; 
-  }
-
-  .header li {
-    margin-bottom: 0;
-  }
-
-  .animatedBackground {
-    padding: 5px;
-  }
-
-  @keyframes logoAnimation {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
+  .navList li {
+    float: none;
   }
 }

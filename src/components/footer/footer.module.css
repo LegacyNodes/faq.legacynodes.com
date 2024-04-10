@@ -1,12 +1,13 @@
-/* Footer Styles */
 .footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background: #000000;
+  background: linear-gradient(to bottom, #002e56, #000000);
   color: white;
-  padding: 20px; /* Adjusted padding for better mobile experience */
+  padding: 25px;
   animation: fadeInDown 1s ease-in-out;
+  width: 100%;
+  font-size: 13pxr;
 }
 
 @keyframes fadeInDown {
@@ -33,6 +34,8 @@
   flex: 1;
   margin-bottom: 20px;
   animation: fadeInUp 1s ease-in-out;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @keyframes fadeInUp {

@@ -43,7 +43,7 @@ body {
   color: var(--text-color);
   line-height: inherit;
   margin: 2px;
-  width: 99.05%;
+  width: 100%;
   overflow-x: hidden;
 }
 

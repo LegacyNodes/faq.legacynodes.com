@@ -72,7 +72,7 @@ export const head: DocumentHead = ({ resolveValue }) => {
       { name: "og:title", content: builderContent?.data?.title },
       { name: "og:description", content: builderContent?.data?.description },
       { name: "og:type", content: builderContent?.data?.ogType },
-      { name: "og:site_name", content: "CraftersGG" },
+      { name: "og:site_name", content: "FAQ LegacyNodes" },
       { name: "twitter:title", content: builderContent?.data?.title },
       { name: "twitter:description", content: builderContent?.data?.description },
     ],
