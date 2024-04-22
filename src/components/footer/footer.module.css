@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background: linear-gradient(to bottom, #002e56, #000000);
+  background: linear-gradient(to bottom, #14171a, #000000);
   color: white;
   padding: 25px;
   animation: fadeInDown 1s ease-in-out;
