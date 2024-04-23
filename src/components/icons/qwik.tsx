@@ -1,6 +1,6 @@
 export const QwikLogo = ({
   width = 100,
-  height = 35,
+  height = 100,
 }: {
   width?: number;
   height?: number;
