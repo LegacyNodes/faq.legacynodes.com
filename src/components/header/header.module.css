@@ -13,6 +13,14 @@
   padding-right: 50px;
 }
 
+.title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: 20px;
+}
+
 .logo img {
   border-radius: 50%;
   border: 6px solid #252525;
@@ -46,15 +54,22 @@
 }
 
 .navList li a:hover {
-  background-color: #007bff;
+  background-color: #68b0fd42;
   border-radius: 3px;
 }
 
 @media (max-width: 600px) {
+  /* Wrapper styles */
   .wrapper {
     flex-direction: column;
   }
 
+  .title {
+    margin: 0 auto;
+    font-size: smaller;
+  }
+
+  /* Navigation list styles */
   .navList li {
     float: none;
   }
