@@ -13,7 +13,7 @@ export default component$(() => {
 
           <div class={styles.contact}>
             <h4>Contact Us</h4>
-            <p><a href="mailto:info@g9aerospace.in">info@g9aerospace.in</a></p>
+            <p>You may contact us via our discord server</p>
           </div>
         </div>
 
@@ -31,8 +31,7 @@ export default component$(() => {
         <div class={styles.column}>
           <div class={styles.partnerships}>
             <h4>Partnerships</h4>
-            <p>We collaborate with industry leaders to provide the best solutions.</p>
-            <p>Partnership: <a href="mailto:partnership@g9aerospace.in">partnership@g9aerospace.in</a></p>
+            <p>We collaborate with industry leaders to provide the best solutions</p>
 
             {/* Social Media Icons */}
             <h4>Stay Connected</h4>
@@ -56,6 +55,7 @@ export default component$(() => {
           </div>
         </div>
       </div>
+      <p class={styles.credit}>Designed by G9 Aerospace</p>
     </footer>
   );
 });

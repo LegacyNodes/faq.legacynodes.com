@@ -4,9 +4,9 @@
   justify-content: space-around;
   background: linear-gradient(to bottom, #14171a, #000000);
   color: white;
-  padding: 25px;
   animation: fadeInDown 1s ease-in-out;
   width: 100%;
+  padding: 5px auto 10px;
   font-size: 13pxr;
 }
 
@@ -25,17 +25,16 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
 /* Column Styles */
 .column {
   flex: 1;
-  margin-bottom: 20px;
+  margin: 2px 15px 2px;
   animation: fadeInUp 1s ease-in-out;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 5px 10px 5px;
 }
 
 @keyframes fadeInUp {
@@ -73,6 +72,17 @@ a {
   text-decoration: none;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+.credit {
+  text-align: right;
+  color: rgba(157, 157, 157, 0.7);
+  font-size: 12px;
+  margin-top: 10px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+
 
 /* Social Icons Animation */
 .socialIcons a {
