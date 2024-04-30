@@ -55,7 +55,7 @@ export default component$(() => {
           </div>
         </div>
       </div>
-      <p class={styles.credit}>Designed by G9 Aerospace</p>
+      <a href="https://g9aerospace.in" class={styles.credit} target="_blank">Designed by G9 Aerospace</a>
     </footer>
   );
 });
